@@ -37,12 +37,3 @@ EXPORT BOOL CALLBACK GetString(PCHAR pStringOut)
 	strcpy_s(pStringOut, iLength+1, szString);
 	return TRUE;
 }
-/*
-EXPORT int CALLBACK GetStrings(GETSTRCB pfnGetStrCallBack, PVOID pParam)
-{
-	BOOL bReturn;
-	bReturn = pfnGetStrCallBack(szString, pParam);
-	if (bReturn == FALSE)
-		return FALSE;
-	return TRUE;
-}*/
